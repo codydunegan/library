@@ -8,8 +8,25 @@
 
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1><span class="iconify-inline" data-icon="mdi:bookshelf"></span>Odin Library</h1>
+    </header>
+    <main>
+        <button id="addbook"><span class="iconify-inline" data-icon="mdi:book-open-page-variant"></span>Add Book</button>
+        <div id="content">
+            <div class="book">
+                <h3>Title: Prepare for a really long one, like for real. :(</h3>
+                <div><span>Author: </span>Unknown</div>
+                <div><span># of pages: </span>9999</div>
+                <div class="bookbuttons">
+                    <button class="togglebook read"><span class="iconify-inline" data-icon="mdi:book-cancel-outline"></span></button>
+                    <button class="deletebook"><span class="iconify-inline" data-icon="mdi:delete-empty"></span></button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

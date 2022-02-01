@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --black-coffee: hsla(320, 10%, 18%, 1);
+    --independence: hsla(253, 10%, 36%, 1);
+    --glaucous: hsla(225, 27%, 55%, 1);
+    --royal-blue-light: hsla(235, 60%, 59%, 1);
+    --mint-cream: hsla(160, 24%, 85%, 1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    min-height: 100vh;
+}
+
+header {
+    grid-row: 1;
+    padding: 10px 30px;
+    background-color: var(--mint-cream);
+    color: var(--black-coffee);
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--glaucous);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header svg {
+    margin-right: 10px;
+}
+
+main {
+    grid-row: 2;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    background-color: var(--black-coffee);
+}
+
+#addbook {
+    justify-self: end;
+    padding: 0px 29px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--royal-blue-light);
+    color: var(--mint-cream);
+    font-weight: bolder;
+}
+
+#addbook svg {
+    margin-right: 10px;
+}
+
+#content {
+    background-color: var(--independence);
+    border: 3px solid var(--mint-cream);
+    border-radius: 8px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 425px));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.book {
+    background-color: var(--mint-cream);
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+}
+
+.book h3 {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--black-coffee);
+}
+
+.book span {
+    font-weight: bolder;
+}
+
+.bookbuttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bookbuttons button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.togglebook {
+
+}
+
+.togglebook svg {
+
+}
+
+.read {
+    color: green;
+}
+
+.unread {
+    
+}
+
+.deletebook {
+    color: red;
+}
+
+.deletebook svg {
+
+}
