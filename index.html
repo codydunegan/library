@@ -28,5 +28,21 @@
             </div>
         </div>
     </main>
+    <div class="newbookmodal">
+        <div class="modal-main">
+            <header>
+                <h3>Add book</h3>
+            </header>
+            <div class="modal-content">
+                <label for="bookname">Book Title:</label>
+                <input type="text" name="bookname" id="bookname" minlength="2" required>
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" minlength="2" required>
+                <label for="pages"># of Pages:</label>
+                <input type="number" name="pages" id="pages" min="0" value="0" required>
+                <button id="addbookFinal"><span class="iconify-inline" data-icon="mdi:book-open-page-variant"></span>Add Book</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
